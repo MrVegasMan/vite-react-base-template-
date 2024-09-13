@@ -1,0 +1,6 @@
+/* - от этого разрешения и ниже - */
+@mixin desc1440 {
+  @media (max-width: map-get($var-breakpoints, bp-xxl)) {
+    @content
+  }
+}

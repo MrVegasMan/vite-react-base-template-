@@ -1,0 +1,44 @@
+$var-browser-context-em: 16;
+$var-browser-context-px: 1;
+$var-body-main-size-font: 1.1111vw;
+$var-breakpoints: (
+        'bp-xxl': 1439px,
+        'bp-xl': 1300px,
+        'bp-l-plus': 1024px,
+        'bp-l': 991px,
+        'bp-m': 767px,
+        'bp-s': 479px
+);
+$var-base-animation-time: 250ms;
+$var-transition-easing: cubic-bezier(0.37, 0, 0.63, 1);
+$fc-major-second: 1.125;
+$fc-minor-third: 1.200;
+$fc-major-third: 1.250;
+$fc-perfect-fourth: 1.333;
+$fc-augmented-fourth: 1.414;
+$fc-perfect-fifth: 1.500;
+$fc-golden-ratio: 1.618;
+$var-multiply: $fc-major-second;
+
+/* ----------- Fonts Variable ----------- */
+// Header
+$ft-header-fonts-bold: 'Base-Bold', sans-serif;
+$ft-header-fonts-semibold: 'Base-SemiBold', sans-serif;
+
+// Body
+$ft-body-fonts-book: 'Base-Book', sans-serif;
+$ft-caption-fonts-semibold: 'Base-SemiBold', sans-serif;
+
+// Body card
+$ft-caption-fonts-cardbody: 'Inter', sans-serif;
+$ft-base-italic: 'Base-Italic', sans-serif;
+
+// Landing Page
+
+$ft-fonts-phobos-bold: 'Base-Bold-Phobos', sans-serif;
+$ft-fonts-phobos-demibold: 'Base-DemiBold-Phobos', sans-serif;
+
+// :TODO шрифты force кильнуть после редизайна всех лендосовских страниц и переменные и сами шрифты
+$ft-fonts-fors-bold: 'Base-Bold-fors', sans-serif;
+$ft-fonts-fors-medium: 'Base-Medium-fors', sans-serif;
+
