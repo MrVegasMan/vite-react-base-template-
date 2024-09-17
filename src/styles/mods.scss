@@ -17,7 +17,6 @@
 }
 
 
-
 /* ----------------------- Text Color ------------------------------ */
 .text-inherit {
   color: inherit;
@@ -38,6 +37,33 @@
 .text-positive-primary {
   color: $color-positive-primary;
 }
+
+/* ----------------------- Text Align ------------------------------ */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
 /* ----------------------- Grid ------------------------------ */
 
 .grid {
@@ -64,6 +90,43 @@
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+
+/* ----------------------- Margin ------------------------------ */
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-auto {
+  z-index: auto;
+}
+
+/* ----------------------- Margin ------------------------------ */
+
+.mt-10 {
+  margin-top: 10px;
+}
+
 /* ----------------------- Padding ------------------------------ */
 
 .p-1 {
@@ -80,6 +143,11 @@
 
 // vertical
 
+.px-4 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .px-8 {
   padding-left: 8px;
   padding-right: 8px;
@@ -95,6 +163,11 @@
   padding-right: 12px;
 }
 
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 //horizontal
 
 .py-5 {
@@ -107,6 +180,10 @@
   padding-bottom: 8px;
 }
 
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 /* ----------------------- gap ------------------------------ */
 
@@ -114,9 +191,18 @@
   gap: 4px;
 }
 
+.gap-6px {
+  gap: 6px;
+}
+
 .gap-8px {
   gap: 8px;
 }
+
+.gap-12px {
+  gap: 8px;
+}
+
 /* ----------------------- Position ------------------------------ */
 
 .relative {
@@ -126,6 +212,7 @@
 .absolute {
   position: absolute;
 }
+
 /* ----------------------- flex ------------------------------ */
 
 .flex {
