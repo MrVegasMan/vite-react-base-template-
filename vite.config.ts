@@ -53,8 +53,9 @@ export default ({command, mode}: ConfigEnv) => {
             preprocessorOptions: {
                 scss: {
                     additionalData: `
-                    @import "@/styles/global/_colors.scss"; 
+                    @import "@/styles/global/_border.scss";
                     @import "@/styles/global/_breakpoints.scss";
+                    @import "@/styles/global/_colors.scss"; 
                     @import "@/styles/global/_var.scss";
                     `,
                 },

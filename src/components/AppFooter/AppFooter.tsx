@@ -4,13 +4,26 @@ import {useNavigate} from "react-router-dom";
 
 export function AppFooter() {
     const navigate = useNavigate()
-    const goAboutPage = () => {
-        navigate('/about')
+
+    const goIqPage = () => {
+        navigate('/iq')
+    }
+    const goOfferwallPage = () => {
+        navigate('/offerwall')
+    }
+    const goHomePage = () => {
+        navigate('/')
+    }
+    const goBoostersPage = () => {
+        navigate('/boosters')
+    }
+    const goFriendsPage = () => {
+        navigate('/friends')
     }
 
     return (
         <nav className={"app-footer flex flex-row justify-between items-end"}>
-            <ButtonFooter onClick={goAboutPage} footerBtnTitle="IQ">
+            <ButtonFooter onClick={goIqPage} footerBtnTitle="IQ">
         <span>
           <svg
               width="28"
@@ -27,7 +40,7 @@ export function AppFooter() {
           </svg>
         </span>
             </ButtonFooter>
-            <ButtonFooter onClick={goAboutPage} footerBtnTitle="Offerwall">
+            <ButtonFooter onClick={goOfferwallPage} footerBtnTitle="Offerwall">
         <span>
           <svg
               width="28"
@@ -41,14 +54,14 @@ export function AppFooter() {
           </svg>
         </span>
             </ButtonFooter>
-            <ButtonFooter onClick={goAboutPage} footerBtnTitle="Home">
+            <ButtonFooter onClick={goHomePage} footerBtnTitle="Home">
         <span
             className={
                 "footer-home-ico-w relative bg-brand-high rounded-full bg-cover"
             }
         ></span>
             </ButtonFooter>
-            <ButtonFooter onClick={goAboutPage} footerBtnTitle="Boosters">
+            <ButtonFooter onClick={goBoostersPage} footerBtnTitle="Boosters">
         <span>
           <svg
               width="28"
@@ -66,7 +79,7 @@ export function AppFooter() {
           </svg>
         </span>
             </ButtonFooter>
-            <ButtonFooter onClick={goAboutPage} footerBtnTitle="Friends">
+            <ButtonFooter onClick={goFriendsPage} footerBtnTitle="Friends">
         <span>
           <svg
               width="28"
