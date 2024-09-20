@@ -12,6 +12,10 @@
   background-color: $color-layer-floor-1;
 }
 
+.bg-neutral-low {
+  background-color: $color-neutral-low;
+}
+
 .bg-positive-high {
   background-color: $color-positive-high;
 }
@@ -32,6 +36,10 @@
 
 .text-content-static-dark-primary {
   color: $color-content-static-dark-primary;
+}
+
+.text-content-neutral-secondary {
+  color: $color-content-neutral-secondary;
 }
 
 .text-positive-primary {
@@ -63,6 +71,83 @@
 .text-end {
   text-align: end;
 }
+
+/* ----------------------- Text Wrap ------------------------------ */
+
+.text-wrap {
+  white-space: normal;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-word-break {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ----------------------- Line Clamp ------------------------------ */
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.line-clamp-5 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.line-clamp-6 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.line-clamp-none {
+  overflow: visible;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-line-clamp: none;
+}
+
 
 /* ----------------------- Grid ------------------------------ */
 
@@ -123,8 +208,28 @@
 
 /* ----------------------- Margin ------------------------------ */
 
+.mt-2 {
+  margin-top: 2px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
 .mt-10 {
   margin-top: 10px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 /* ----------------------- Padding ------------------------------ */
@@ -139,6 +244,10 @@
 
 .p-8 {
   padding: 8px;
+}
+
+.p-17 {
+  padding: 17px;
 }
 
 // vertical
@@ -168,6 +277,11 @@
   padding-right: 16px;
 }
 
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 //horizontal
 
 .py-5 {
@@ -178,6 +292,11 @@
 .py-8 {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .py-20 {
@@ -200,7 +319,11 @@
 }
 
 .gap-12px {
-  gap: 8px;
+  gap: 12px;
+}
+
+.gap-24px {
+  gap: 24px;
 }
 
 /* ----------------------- Position ------------------------------ */
@@ -461,6 +584,18 @@
 
 .rounded-8 {
   border-radius: 8px;
+}
+
+.rounded-12 {
+  border-radius: 20px;
+}
+
+.rounded-16 {
+  border-radius: 20px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
 }
 
 /* ----------------------- Overflow ------------------------------ */
