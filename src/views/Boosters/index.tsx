@@ -7,7 +7,7 @@ function Boosters() {
 
 
     return (
-        <div className="py-8 px-4">
+        <div className="py-8">
 
             <ul className={'flex flex-col gap-4px'}>
                 <li>

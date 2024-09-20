@@ -53,7 +53,7 @@ function Friends() {
                             />
                         </div>
 
-                        <p className={'compact-300-accent text-left justify-self-start text-ellipsis'}>ddiddiddi
+                        <p className={'compact-300-accent text-left justify-self-start text-ellipsis grow'}>ddiddiddi
                             ddddiddiddiddi ddidd iddddiddiddi</p>
 
 
