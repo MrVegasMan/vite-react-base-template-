@@ -1,16 +1,14 @@
-import "./ButtonFooter.scss";
-
 import {ReactNode} from "react";
 
-interface ButtonFooterProps {
+interface ButtonBig {
     children: ReactNode;
     footerBtnTitle: string;
     onClick: () => void; // Изменяем на функцию для навигации
 }
 
-export function ButtonFooter({children, footerBtnTitle, onClick}: ButtonFooterProps) {
+export function ButtonFooter({children, footerBtnTitle, onClick}: ButtonBig) {
     return (
-        <button type={'button'} onClick={onClick} className={"app-footer-link flex flex-col gap-4px items-center grow"}>
+        <button onClick={onClick} className={"p-17 rounded-12"}>
             {children}
             <p className={"compact-200-accent"}>{footerBtnTitle}</p>
         </button>
