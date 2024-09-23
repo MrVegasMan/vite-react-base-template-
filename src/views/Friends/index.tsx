@@ -21,8 +21,8 @@ function Friends() {
     return (
         <div className="flex flex-col gap-24px">
             <div>
-                <h1 className={'font-brand mt-40'}>{pageTitle}</h1>
-                <p className={'compact-250-numeric mt-8'}>Invite your friends and get 20% of their claims</p>
+                <h1 className={'display-450-accent mt-40'}>{pageTitle}</h1>
+                <p className={'text-350-default mt-8'}>Invite your friends and get 20% of their claims</p>
 
                 <div className={'grid grid-cols-3 gap-4px mt-12'}>
 
@@ -42,7 +42,7 @@ function Friends() {
             <InviteFriends addWrapperClassName={'mt-8'}/>
 
             <div className={'text-left py-8 px-20'}>
-                <h3 className={'compact-350-default'}>Friends</h3>
+                <h3 className={'display-350-accent'}>Friends</h3>
                 <ul className={'py-5'}>
                     <li className={'referral-list-item-w flex flex-row items-center gap-12px py-12'}>
                         <div className={"user-avatar rounded-full overflow-hidden bg-brand-high grow-0"}>

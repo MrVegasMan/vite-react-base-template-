@@ -11,8 +11,8 @@ export function AppFooter() {
     const goOfferwallPage = () => {
         navigate('/offerwall')
     }
-    const goHomePage = () => {
-        navigate('/')
+    const goTapalkaPage = () => {
+        navigate('/tapalka')
     }
     const goBoostersPage = () => {
         navigate('/boosters')
@@ -54,7 +54,7 @@ export function AppFooter() {
           </svg>
         </span>
             </ButtonFooter>
-            <ButtonFooter onClick={goHomePage} footerBtnTitle="Home">
+            <ButtonFooter onClick={goTapalkaPage} footerBtnTitle="Home">
         <span
             className={
                 "footer-home-ico-w relative bg-brand-high rounded-full bg-cover"

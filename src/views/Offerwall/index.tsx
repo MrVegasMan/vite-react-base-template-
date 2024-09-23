@@ -1,22 +1,25 @@
-import {useUserStore} from '@store/user'
+import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
 
 function Offerwall() {
-    const navigate = useNavigate()
-    const [pageTitle] = useState('Offerwall')
-    const {num, changeNum} = useUserStore()
+
+    const [pageTitle] = useState('Get more IQ points')
+
 
     return (
         <div>
-            <h1>{pageTitle}</h1>
-            <h2>userSore.num:{num}</h2>
-            <button onClick={changeNum}>
-                click on the store provided by zustand to change the number
-            </button>
-            <br/>
-            <br/>
-            <button onClick={() => navigate(-1)}>
-                back
-            </button>
+            <h1 className={'display-450-accent'}>{pageTitle}</h1>
+            <TabGroup>
+                <TabList className={'compact-300-accent'}>
+                    <Tab>Tab 1</Tab>
+                    <Tab>Tab 2</Tab>
+                    <Tab>Tab 3</Tab>
+                </TabList>
+                <TabPanels className={'compact-350-accent'}>
+                    <TabPanel>Content 1</TabPanel>
+                    <TabPanel>Content 2</TabPanel>
+                    <TabPanel>Content 3</TabPanel>
+                </TabPanels>
+            </TabGroup>
         </div>
     )
 }

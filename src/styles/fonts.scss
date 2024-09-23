@@ -26,6 +26,26 @@
   letter-spacing: -0.078px;
 }
 
+.display-500-accent {
+  font-family: 'Comic Neue', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+
+.display-450-accent {
+  font-family: 'Comic Neue', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+
 .compact-400-accent {
   font-family: 'Comic Neue', sans-serif;
   font-style: normal;
@@ -58,6 +78,23 @@
   line-height: 22px;
   font-feature-settings: 'tnum' on, 'lnum' on;
 }
+
+.display-350-accent {
+  font-family: 'Comic Neue', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.text-350-default {
+  font-family: 'Comic Neue', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 
 .compact-300-accent {
   font-family: 'Comic Neue', sans-serif;
