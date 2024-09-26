@@ -1,19 +1,11 @@
-.booster-card {
-  background-color: $color-neutral-low;
-  border-radius: $border-radius-default;
-
-  &__image {
-    max-width: 40%;
-    max-height: 200px;
-    position: absolute;
-    bottom: 0;
-    right: 20px;
-    padding-top: 20px;
-  }
-}
-
-.booster-card-lvl-w {
-  margin-left: 8px;
-  border-radius: $border-radius-8;
-  border: 2px solid $color-border-neutral-primary;
+.offer-card {
+  background: $color-neutral-low;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  text-align: start;
+  padding: 16px 20px;
+  align-items: center;
 }

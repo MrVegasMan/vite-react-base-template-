@@ -5,7 +5,7 @@ function Home() {
 
     return (
         <>
-            <div className={"flex flex-col gap-8px"}>
+            <div className={"flex flex-col gap-8px mt-40"}>
                 <h1 className={"compact-250-numeric text-content-neutral-secondary"}>your balance</h1>
                 <p className={"font-brand"}>{countTap}</p>
                 <p className={"compact-300-accent-numeric text-positive-primary"}>

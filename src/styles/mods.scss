@@ -20,6 +20,19 @@
   background-color: $color-positive-high;
 }
 
+.ico-24px {
+  min-height: 24px;
+  min-width: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.ico-56px {
+  min-height: 56px;
+  min-width: 56px;
+  height: 56px;
+  width: 56px;
+}
 
 /* ----------------------- Text Color ------------------------------ */
 .text-inherit {
@@ -305,6 +318,10 @@
 }
 
 /* ----------------------- gap ------------------------------ */
+
+.gap-2px {
+  gap: 2px;
+}
 
 .gap-4px {
   gap: 4px;
@@ -681,4 +698,8 @@
 .size-fit {
   width: fit-content;
   height: fit-content;
+}
+
+.inset-0 {
+  inset: 0;
 }

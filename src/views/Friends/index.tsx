@@ -1,5 +1,8 @@
 import "./friendsPage.scss";
 import InviteFriends from "@components/Invite/InviteFriends.tsx";
+import FriendCard from "@components/Friend/FriendCard.tsx";
+import {mockUsers} from "@/mocs/index.ts"
+import {useState} from "react";
 
 interface FriendBonusCardData {
     label: string;
@@ -7,11 +10,16 @@ interface FriendBonusCardData {
     icon?: string;
 }
 
+const totalEarned = mockUsers.reduce((acc, user) => (acc + user.earn) / 100 * 20, 0);
+
+const premiumCount = mockUsers.filter(user => user.is_premium).length;
+
 const friendsData: FriendBonusCardData[] = [
-    {label: 'Friends', value: 5},
-    {label: 'IQ Earned', value: 150, icon: '🧠'},
-    {label: 'Premium ref', value: 5, icon: '⭐'}
+    {label: 'Friends', value: mockUsers.length},
+    {label: 'IQ Earned', value: totalEarned, icon: '🧠'},
+    {label: 'Premium ref', value: premiumCount, icon: '⭐'}
 ];
+
 
 function Friends() {
 
@@ -44,24 +52,9 @@ function Friends() {
             <div className={'text-left py-8 px-20'}>
                 <h3 className={'display-350-accent'}>Friends</h3>
                 <ul className={'py-5'}>
-                    <li className={'referral-list-item-w flex flex-row items-center gap-12px py-12'}>
-                        <div className={"user-avatar rounded-full overflow-hidden bg-brand-high grow-0"}>
-                            <img
-                                className={"size-full"}
-                                src="/src/assets/images/wojak.svg"
-                                alt="User Avatar"
-                            />
-                        </div>
-
-                        <p className={'compact-300-accent text-left justify-self-start text-ellipsis grow'}>ddiddiddi
-                            ddddiddiddiddi ddidd iddddiddiddi</p>
-
-
-                        <div className={'flex flex-row gap-8px grow-0 text-nowrap'}>
-                            <p className={'compact-300-accent-numeric'}>1 {' '} <span>⭐</span></p>
-                            <p className={'compact-300-accent-numeric'}>2 {' '} <span>🧠</span></p>
-                        </div>
-                    </li>
+                    {mockUsers.map(user => (
+                        <FriendCard data={user} key={user.tg_id}></FriendCard>
+                    ))}
                 </ul>
             </div>
         </div>

@@ -1,31 +1,30 @@
-import React from 'react';
 import "./OfferCard.scss";
+import {OfferTask} from "@/types/iOffers.ts";
+import useTotalRewards from "@hooks/useTotalRewards.ts";
 
-interface BoosterCardProps {
-    title: string;
-    reward: number;
-    icoSrc: string;
-
+interface PropsTasks {
+    data: OfferTask
 }
 
-const OfferCard: React.FC<BoosterCardProps> = ({
-                                                   title,
-                                                   reward,
-                                                   icoSrc
-                                               }) => {
-    return (
-        <div className="offer-card text-left flex flex-row justify-between px-16 gap-12px relative">
+const OfferCard = ({data}: PropsTasks) => {
+    // const {data} = props
 
-            <div>
-                <img src={icoSrc} alt={title} className="offer-card__ico"/>
+    const {totalRewards} = useTotalRewards(data.tasks)
+
+    return (
+        <div className="offer-card">
+
+            <div className="ico-56px">
+                <img src={data.mainIco} alt={data.title} className="size-full"/>
             </div>
 
-            <div className="flex flex-col gap-6px py-20 z-10">
+            <div className="flex flex-col gap-2px grow">
 
-                <h3 className={'compact-400-accent'}>{title}</h3>
+                <h3 className={'compact-350-accent'}>{data.title}</h3>
 
                 <p className={'subtitle'}>
-                    {reward}{' '}
+
+                    {totalRewards}{' '}
                     <span>
                         🧠
                     </span>
@@ -34,10 +33,10 @@ const OfferCard: React.FC<BoosterCardProps> = ({
 
             </div>
 
-            <div>
-                <img src={icoSrc} alt={title} className="booster-card__image"/>
+            <div className="ico-24px">
+                <img src={'src/assets/images/chevron-forward.svg'} alt={data.title} className="size-full"/>
             </div>
-            <button type={'button'} className={'absolute size-full z-10'}></button>
+            <button type={'button'} className={'absolute size-full inset-0 z-10'}></button>
         </div>
     );
 };

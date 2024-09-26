@@ -1,4 +1,6 @@
 import {Tab, TabGroup, TabList, TabPanel, TabPanels} from "@headlessui/react";
+import OfferCard from "@components/Offer/OfferCard.tsx";
+import {oferCard} from "@/mocs/index.ts"
 
 function Offerwall() {
 
@@ -12,10 +14,16 @@ function Offerwall() {
                 <TabList className={'compact-300-accent'}>
                     <Tab>Tab 1</Tab>
                     <Tab>Tab 2</Tab>
-                    <Tab>Tab 3</Tab>
+                    {/*<Tab>Tab 3</Tab>*/}
                 </TabList>
                 <TabPanels className={'compact-350-accent'}>
-                    <TabPanel>Content 1</TabPanel>
+                    <TabPanel>
+                        {oferCard.map(task => (
+                            <OfferCard data={task} key={task.id}>
+                            </OfferCard>
+                        ))}
+
+                    </TabPanel>
                     <TabPanel>Content 2</TabPanel>
                     <TabPanel>Content 3</TabPanel>
                 </TabPanels>
